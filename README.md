@@ -1,54 +1,82 @@
-<<<<<<< HEAD
-# Dice_game
-=======
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Dice Play Game 🎲
 
-Currently, two official plugins are available:
+A simple and interactive dice game built with React, TypeScript, and Tailwind CSS. In this game, players select a number between 1 and 6, roll a dice, and aim to match their selected number. Points are awarded based on matches, and points are deducted for incorrect guesses!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Screenshots
 
-## Expanding the ESLint configuration
+![Screenshot 2024-11-01 232929](https://github.com/user-attachments/assets/f9a06ea6-0b0a-46d2-af1a-6bfeca04485c)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Screenshot 2024-11-01 233003](https://github.com/user-attachments/assets/3cbcc0ff-9dc9-4273-b455-3454cd338e43)
 
-- Configure the top-level `parserOptions` property like this:
+![Screenshot 2024-11-01 233037](https://github.com/user-attachments/assets/7cfea82e-3752-4651-91ea-1d55d59ae7f6)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🔗 Live Demo
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
->>>>>>> d42312c (Initial commit)
+*(Add the link to your deployed project, if available)*
+
+## 📜 Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [How to Play](#how-to-play)
+- [Technologies Used](#technologies-used)
+
+
+## 🌟 Features
+
+- Interactive landing page and play-ground page.
+- Choose a number between 1 and 6 before each roll.
+- Dynamic score calculation: earn points for correct guesses and lose points for incorrect ones.
+- Responsive design powered by Tailwind CSS.
+
+## 🚀 Getting Started
+
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+
+- Node.js and npm installed on your computer.
+- Basic knowledge of React and TypeScript.
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-username/dice-play-game.git
+   cd dice-play-game
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Project**
+
+   ```bash
+   npm start
+   ```
+
+4. **Open in Browser**
+
+   Go to [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+## 🎮 How to Play
+
+1. **Select a Number**: Choose a number from 1 to 6 at the top of the play-ground page.
+2. **Roll the Dice**: Click the dice to roll.
+3. **Score Calculation**:
+   - If the dice matches your selected number, you earn points equal to the dice value.
+   - If the dice does not match your selection, 2 points are deducted.
+
+## 🛠️ Technologies Used
+
+- **React**: For building the user interface.
+- **TypeScript**: For static typing.
+- **Tailwind CSS**: For styling and responsive design.
+- **React Router DOM**: For navigation between the landing and play-ground pages.
