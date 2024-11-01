@@ -15,7 +15,7 @@ A simple and interactive dice game built with React, TypeScript, and Tailwind CS
 
 ## 🔗 Live Demo
 
-*(Add the link to your deployed project, if available)*
+https://sniperxyz011.github.io/Dice_game/
 
 ## 📜 Table of Contents
 
